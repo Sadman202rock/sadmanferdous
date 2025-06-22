@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md Sadman Ferdous Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navigation Menu (Fixed & Responsive) -->
+  <header id="menu">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#header" class="logo">Md Sadman Ferdous</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav-right" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+        <a href="#game">Game</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Header Section with Cover Background & Typing Animation -->
+  <section id="header" class="section header-section">
+    <div class="header-bg" style="background-image: url('sadmanface.png');"></div>
+    <div class="header-content">
+      <h1>
+        Hello, I am <br>
+        <span id="typing"></span>
+      </h1>
+      <p>A passionate designer and student.</p>
+    </div>
+    <!-- Improved Arrow Animation -->
+    <div class="scroll-arrow" id="scroll-to-about">
+      <span>&#x2193;</span>
+    </div>
+  </section>
+
+  <!-- About Section (unchanged) -->
+  <section id="about" class="section about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="sadmanface.png" alt="Md Sadman Ferdous"/>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <hr />
+        <p>
+          Hey there! I'm <strong>Mohammad Sadman Ferdous</strong> , a student by day and a graphic designer by passion. I started designing out of curiosity — and now it's become a huge part of who I am.
+From logos to layouts, I love bringing ideas to life with clean, creative visuals. I’m always exploring new styles, tools, and challenges that help me grow and keep things exciting.
+When I'm not designing or studying, you’ll probably find me brainstorming my next big idea, sketching random concepts, or just geeking out over fonts and colors.
+Let’s build something cool together!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section with Centered Heading -->
+  <section id="education" class="section education-section">
+    <div class="section-header">
+      <h2>My Educational Background</h2>
+    </div>
+    <div id="education-container" class="education-cards">
+      <!-- Education cards will be generated via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Skills Section with Centered Heading -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-container">
+      <div class="skill">
+        <div class="progress-bar" data-percentage="90" data-label="HTML">
+          <div class="progress-label"></div>
+          <div class="progress-fill"></div>
+          <span class="progress-percent">90%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="progress-bar" data-percentage="85" data-label="CSS">
+          <div class="progress-label"></div>
+          <div class="progress-fill"></div>
+          <span class="progress-percent">85%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="progress-bar" data-percentage="50" data-label="JavaScript">
+          <div class="progress-label"></div>
+          <div class="progress-fill"></div>
+          <span class="progress-percent">50%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="progress-bar" data-percentage="95" data-label="Logo Design">
+          <div class="progress-label"></div>
+          <div class="progress-fill"></div>
+          <span class="progress-percent">95%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="progress-bar" data-percentage="98" data-label="T-Shirt Design">
+          <div class="progress-label"></div>
+          <div class="progress-fill"></div>
+          <span class="progress-percent">98%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with Centered Heading -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <h2>My Project</h2>
+    </div>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="1.png" alt="Project 1"/>
+        </div>
+        <div class="slide">
+          <img src="2.png" alt="Project 2"/>
+        </div>
+        <div class="slide">
+          <img src="3.png" alt="Project 3"/>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <span class="control active" data-index="0"></span>
+        <span class="control" data-index="1"></span>
+        <span class="control" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Game section-->
+  <section id="game" class="section contact-section">
+    <div class="section-header">
+      <h2>Game</h2>
+    </div>
+    <div class="section-header">
+      <button class="beautiful-button">
+       Tip - tap toe
+      </button>
+    </div>
+  </section>  
+
+  <!-- Contact Section with Centered Heading -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="contact-container">
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required/>
+        <input type="email" id="email" name="email" placeholder="Your Email" required/>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>All rights reserved by Md Sadman Ferdous</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
